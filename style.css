@@ -1,0 +1,262 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+.css-selector {
+    background: linear-gradient(143deg, #823c82, #47999b);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 0s ease infinite;
+    -moz-animation: AnimationName 0s ease infinite;
+    animation: AnimationName 0s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+button:focus {outline:0;}
+.cell{
+    width: 185px;
+    height: 185px;
+    border: 2px solid;
+    text-align: center;
+    line-height: 180px;
+    font-size: 90px;
+    box-shadow: 0 0 0 4px;
+    margin: auto;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+     width: 215px;
+     height: 215px;
+     color: rgb(255, 255, 255);
+     grid-gap: 0px 3px;
+     min-width: 100vw;
+     min-height: 0vh;
+     justify-content: center;
+     align-items: center;
+     padding-top: 3vh;
+     font-size: 80px;
+
+}
+#scoreContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#score{
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 39px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Bakbak One', cursive;
+
+}
+
+#timeDisplay{
+    align-items: flex-start;  
+    
+    font-size: 39px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Bakbak One', cursive;
+    margin-left: 500px;
+}
+#actualScore{
+    font-size: 69px;
+    color: whitesmoke;
+    font-family: 'Bakbak One', cursive;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 602px;
+    text-align: center;
+
+}
+#actualScore:hover{
+    color: #ff00b7;
+    border-color: #00fbff;
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#actualScore:hover.color{
+    color: rgb(0,212,255);
+color: linear-gradient(90deg, rgba(0,212,255,1) 21%, rgba(244,7,243,1) 100%);
+
+
+}
+.line{
+    width: 420px;
+    height: 10px;
+    margin-left: -164px;
+    margin-top: 40px ;
+    background: rgb(244,7,243);
+background: linear-gradient(90deg, rgb(7, 205, 244) 0%, rgb(255, 0, 183) 100%);
+
+}
+.howw{
+    font-size: 50px;
+    font-family: 'Bakbak One', cursive;
+    cursor: pointer;
+    color: #00fbff;
+    background-color: transparent;
+    border-radius: 25px;
+    border-color:#ff00b7;
+    position:absolute;
+   top: 65px;
+
+    }    
+    .howw:hover{
+        color: #ff00b7;
+        border-color: #00fbff;
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    .howw:hover.color{
+        border-color: rgb(0,212,255);
+    border-color: linear-gradient(90deg, rgba(0,212,255,1) 21%, rgba(244,7,243,1) 100%);
+    color: rgb(0,212,255);
+    color: linear-gradient(90deg, rgba(0,212,255,1) 21%, rgba(244,7,243,1) 100%);
+    
+    
+    }
+
+#resetBtn{
+font-size: 49px;
+
+text-align: center;
+float:right;
+margin-bottom: 40px;
+margin-left: -190px;
+
+
+font-family: 'Bakbak One', cursive;
+cursor: pointer;
+color: #00fbff;
+background-color: transparent;
+border-radius: 25px;
+border-color:#ff00b7;
+}
+#resetBtn:hover{
+    color: #ff00b7;
+    border-color: #00fbff;
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#resetBtn:hover.color{
+    border-color: rgb(0,212,255);
+border-color: linear-gradient(90deg, rgba(0,212,255,1) 21%, rgba(244,7,243,1) 100%);
+color: rgb(0,212,255);
+color: linear-gradient(90deg, rgba(0,212,255,1) 21%, rgba(244,7,243,1) 100%);
+
+
+}
+
+/* .cat{
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem #ff00b7);
+    margin-top: 500px;
+} */
+
+
+.popup{
+    width: 600px;
+    height: 600px;
+    position:absolute;
+    border-radius: 25px;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    background: rgb(54,167,141);
+   background: linear-gradient(180deg, rgb(27, 189, 135) 23%, rgb(115, 177, 15) 100%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: aliceblue;
+    font-family: 'Bakbak One', cursive;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   visibility: hidden;
+   transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility:visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+.popup img
+{
+width: 100px;
+margin-top: 30px;
+border-radius: 50%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: white;
+}
+.popup h2{
+    font-size: 68px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family: 'Bakbak One', cursive;
+
+}
+.popup p{
+    font-size: 48px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family: 'Bakbak One', cursive;
+    margin-bottom: 50px;
+}
+#popupbtn{
+    font-size: 59px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Bakbak One', cursive;
+    cursor: pointer;
+    color: #00fbff;
+    background-color: transparent;
+    border-radius: 25px;
+    border-color:#ff00b7;
+    }
+    #popupbtn:hover{
+        color: #ff00b7;
+        border-color: #00fbff;
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    #popupbtn:hover.color{
+        border-color: rgb(0,212,255);
+    border-color: linear-gradient(90deg, rgba(0,212,255,1) 21%, rgba(244,7,243,1) 100%);
+    color: rgb(0,212,255);
+    color: linear-gradient(90deg, rgba(0,212,255,1) 21%, rgba(244,7,243,1) 100%);
+    
+    
+    }
